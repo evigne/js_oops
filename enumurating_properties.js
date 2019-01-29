@@ -7,7 +7,7 @@ function Circle(radius){
 }
 
 const another = new Circle(1);
-another.location = {x:1}
+another.location = "location"
 
 for (let key in another){
     console.log(key)
