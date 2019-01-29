@@ -6,9 +6,28 @@ function Circle(radius){
     }
 }
 
-const another = new Circle(1);
-another.location = "location"
+const another = new Circle(10);
+another.location = {x:1}
 
 for (let key in another){
-    console.log(key)
+    // console.log(typeof(another[key]), "Hello",key)
+    if (typeof(another[key]) !== 'funtion'){
+            console.log(key,another[key]);
+    }
 }
+
+const keys = Object.keys(another);
+
+console.log(keys);
+
+if ('radius' in another){
+    console.log("another as radius");
+}
+
+// or
+
+if ('radius' in another)
+    console.log("another as radius");
+    
+
+
