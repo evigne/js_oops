@@ -27,9 +27,15 @@ function Stopwatch(){
     };
     Object.defineProperty(this, 'duration', {
         get : function() {
+           
             return duration;
         }
     });
+    Stopwatch.prototype.d = function(){
+        alert(duration);
+        return duration;
+    } 
+    
 }
 
 const watch = new Stopwatch()
