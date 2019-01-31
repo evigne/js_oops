@@ -31,7 +31,7 @@ function Stopwatch(){
             return duration;
         }
     });
-    Stopwatch.prototype.d = function(){
+    Stopwatch.prototype.duration1 = function(){
         alert(duration);
         return duration;
     } 
