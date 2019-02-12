@@ -1,0 +1,44 @@
+ $('#show_form_tab').jqxTabs({ width: "100%", height:  "782px"});
+  $('#show_form_tab').jqxTabs('select', 0) 
+ $('#show_form_tab').on('selecting', (event) =>
+##      console.log(event, "event");
+#      if event.args.item is 0
+##        $("#show_info_form").html("") # clearing and loading HTML again
+##        Mshow.show_info_form = Bot.BOT_gen_form(
+##          html_dom_id : "show_info_form"
+##          meta_url : "#{api_root}/shotbot/shows/"
+##          config_file_path : "/static/manage_show/configs/show_info_form"
+##          after_open_fn: (form) ->
+##
+##             form.setFormData(Mshow.selected_row_data)
+##             return form
+##        )
+#
+#      else if event.args.item is 1
+##        $("#billing_info_form").html("") # clearing and loading HTML again
+##        Mshow.billing_info_form = Bot.BOT_gen_form(
+##          html_dom_id : "billing_info_form"
+##          meta_url : "#{api_root}/shotbot/shows/"
+##          config_file_path : "/static/manage_show/configs/billing_info_form"
+##          after_open_fn: (form) ->
+##
+##             form.setFormData(Mshow.selected_row_data)
+##             return form
+##
+##        )
+#      else
+##         $("#marketing_info_form").html("") # clearing and loading HTML again
+##         Mshow.marketing_info_form = Bot.BOT_gen_form(
+##            html_dom_id : "marketing_info_form"
+##            meta_url : "#{api_root}/shotbot/shows/"
+##            config_file_path : "/static/manage_show/configs/marketing_info_form"
+##            after_open_fn: (form) ->
+##              marketing_value_combo = form.getCombo('marketing_value_rating')
+##              marketing_value_combo.addOption(null, "---------------")
+##              marketing_value_combo = marketing_value_combo.setOptionIndex(null, 0)
+##              form.setFormData(Mshow.selected_row_data)
+##              return form
+##
+##         )
+#
+#  );

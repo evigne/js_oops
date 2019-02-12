@@ -11,7 +11,7 @@ another.location = {x:1}
 
 for (let key in another){
     // console.log(typeof(another[key]), "Hello",key)
-    if (typeof(another[key]) !== 'funtion'){
+    if (typeof(another[key]) !== 'function'){
             console.log(key,another[key]);
     }
 }

@@ -21,7 +21,7 @@ function Book(title,author,year){
     this.author = author;
     this.year = year;
     this.getSummary = function(){
-        return `${this.title} was written by ${this.author} in ${this.year}`; 
+        return `${this.title} was written by ${this.author} in ${this.year}`;  //template literal
     }
 }
 
