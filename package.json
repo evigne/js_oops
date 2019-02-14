@@ -1,0 +1,20 @@
+{
+  "name": "name_js",
+  "version": "1.10",
+  "main": "index.js",
+  "repository": "https://github.com/evigne/js_oops.git",
+  "author": "evigne <vigneshwaranethirajan@gmail.com>",
+  "scripts": {
+    "build": "tsc --watch"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "ts-lint": "^4.5.1",
+    "typescript": "^3.3.3"
+  },
+  "devDependencies": {},
+  "peerDependencies": {
+    "ts-lint": "^4.5.1",
+    "typescript": "^3.3.3"
+  }
+}
